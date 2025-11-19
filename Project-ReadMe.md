@@ -1,0 +1,1 @@
+This project is a portfolio website to display and showcase my coding for Web Technology
