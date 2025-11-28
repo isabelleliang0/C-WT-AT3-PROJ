@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISABELLE LIANG | Web Tech | Cert 4 Prog Portfolio</title>
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="sticky top-0 flex justify-between items-center p-6 mx-auto bg-ivoryMist text-steelBlue border-dustyTaupe">
+    
+    <!-- LEFT -->
+    <h3 class="text-xl font-semibold">
+        Certificate 4 Web Tech Portfolio
+    </h3>
+
+    <!-- RIGHT -->
+<div class="flex flex-wrap gap-8 text-deepMocha text-lg">
+  <a href="home.html" class="hover:underline">Home</a>
+  <a href="contact.html" class="hover:underline">Contact</a>
+  <a href="about.html" class="hover:underline">About</a>
+  <a href="resume.html" class="hover:underline">Resume</a>
+  <a href="projects" class="hover:underline">Projects</a>
+  <a href="sampleP.html" class="hover:underline">Sample Projects</a>
+</div>
+</div>
+
+
+<!-- EXAMPLE FROM PHASE 4 -->
+<div class="min-h-screen flex flex-col justify-center items-center bg-ivoryMist px-4 py-10 gap-8">
+
+  <!-- TITLE -->
+  <h2 class="text-3xl font-bold text-dee mb-6">Ninja API App</h2>
+
+  <!-- BUCKET LIST/HOBBIES CHECKBOX -->
+  <div class="flex flex-col md:flex-row gap-4 items-center">
+    <label class="flex items-center gap-2 text-steelBlue">
+      <input type="checkbox" id="bucketList" class="form-checkbox h-5 w-5 text-steelBlue">
+      Bucket List
+    </label>
+
+    <label class="flex items-center gap-2 text-steelBlue">
+      <input type="checkbox" id="hobbies" class="form-checkbox h-5 w-5 text-steelBlue">
+      Hobbies
+    </label>
+  </div>
+
+  <!-- DROPDWON CATEGORIES -->
+  <div id="hobbySection" class="flex flex-col items-center gap-2">
+    <label for="category" class="text-ivoryMist font-medium">Choose category:</label>
+    <select id="category" class="px-3 py-2 rounded-lg border border-steelBlue focus:outline-none focus:ring-2 focus:ring-steelBlue">
+      <option value="general">General</option>
+      <option value="education">Education</option>
+      <option value="sports_and_outdoors">Sports and Outdoors</option>
+      <option value="collection">Collection</option>
+      <option value="competition">Competition</option>
+      <option value="observation">Observation</option>
+    </select>
+  </div>
+
+<!-- OUTPUT -->
+<div id="output" 
+     class="w-full max-w-lg h-30 bg-dustyTaupe text-ivoryMist rounded-lg p-6 shadow-inner flex items-center justify-center text-center">
+  Click the button to get a result!
+</div>
+
+
+  <!-- BUTTON -->
+<button id="getResponseButton"
+        class="bg-steelBlue text-deepMocha py-8 p-6 rounded-lg hover:bg-steelBlue/90 transition-colors shadow-md"">
+  Get Response
+</button>
+
+
+</div>
+
+
+  <!--FOOTER-->
+  <footer class="bg-ivoryMist body-font w-full">
+    <div class="container p-6 mx-auto flex flex-col md:flex-row items-start justify-between gap-2">
+      <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+        <p>© Copyright 2023 Adrian Gould and Isabelle Liang. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+      <script src="sampleP.js"></script>
+
+</body>
+</html>
