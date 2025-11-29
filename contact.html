@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISABELLE LIANG | Web Tech | Cert 4 Prog Portfolio</title>
+    <link rel="stylesheet" href="./src/output.css">
+
+</head>
+<body class="bg-deepMocha">
+
+<!-- HEADER -->
+<div class="sticky top-0 flex justify-between items-center p-6 mx-auto bg-ivoryMist text-steelBlue border-dustyTaupe">
+    
+    <!-- LEFT -->
+    <h3 class="text-xl font-semibold">
+        Certificate 4 Web Tech Portfolio
+    </h3>
+
+    <!-- RIGHT -->
+<div class="flex flex-wrap gap-8 text-deepMocha text-lg">
+  <a href="home.html" class="hover:underline">Home</a>
+  <a href="contact.html" class="hover:underline">Contact</a>
+  <a href="about.html" class="hover:underline">About</a>
+  <a href="resume.html" class="hover:underline">Resume</a>
+  <a href="projects" class="hover:underline">Projects</a>
+  <a href="sample" class="hover:underline">Sample Projects</a>
+</div>
+
+
+</div>
+
+<!-- CARD WRAP-->
+<div class="min-h-screen flex justify-center items-center px-4">
+
+  <!-- CONTACT CARD -->
+  <div class="w-full max-w-lg bg-ivoryMist border border-deepMocha p-8 rounded-lg shadow-lg">
+    
+    <h1 class="text-3xl font-bold text-center mb-6">Contact Us</h1>
+    
+    <form id="contactForm" class="flex flex-col gap-4" novalidate>
+      
+      <!-- NAME -->
+      <div class="flex flex-col">
+        <label for="name" class="mb-1 font-medium">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"
+               class="border border-gray-400 rounded px-3 py-2">
+        <span id="nameError" class="text-red-600 text-sm mt-1"></span>
+      </div>
+      
+      <!-- EMAIL -->
+      <div class="flex flex-col">
+        <label for="email" class="mb-1 font-medium">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"
+               class="border border-gray-400 rounded px-3 py-2">
+        <span id="emailError" class="text-red-600 text-sm mt-1"></span>
+      </div>
+      
+      <!-- MESSAGE -->
+      <div class="flex flex-col">
+        <label for="message" class="mb-1 font-medium">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" rows="5"
+                  class="border border-gray-400 rounded px-3 py-2"></textarea>
+        <span id="messageError" class="text-red-600 text-sm mt-1"></span>
+      </div>
+      
+      <!-- BUTTON -->
+      <button type="submit" 
+              class="bg-steelBlue text-ivoryMist font-semibold px-4 py-2 rounded hover:bg-steelBlue transition-colors">
+        Send
+      </button>
+      
+    </form>
+    
+  </div>
+
+</div>
+
+
+  <!--FOOTER-->
+  <footer class="bg-ivoryMist body-font w-full">
+    <div class="container p-6 mx-auto flex flex-col md:flex-row items-start justify-between gap-2">
+      <div class="flex flex-wrap text-sm pl-6 ml-6 border-l border-gray-400 grow">
+        <p>© Copyright 2023 Adrian Gould and Isabelle Liang. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<script src="contact.js"></script>
+</body>
+</html>
