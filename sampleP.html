@@ -5,84 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISABELLE LIANG | Web Tech | Cert 4 Prog Portfolio</title>
     <link rel="stylesheet" href="./src/output.css">
-
 </head>
-<body>
+
+<body class="bg-deepMocha">
 
 <!-- HEADER -->
-<div class="sticky top-0 flex justify-between items-center p-6 mx-auto bg-ivoryMist text-steelBlue border-dustyTaupe">
-    
-    <!-- LEFT -->
-    <h3 class="text-xl font-semibold">
-        Certificate 4 Web Tech Portfolio
-    </h3>
+<header class="sticky top-0 bg-ivoryMist text-steelBlue border-b border-dustyTaupe p-6">
+    <div class="flex justify-between items-center mx-auto">
 
-    <!-- RIGHT -->
-<div class="flex flex-wrap gap-8 text-deepMocha text-lg">
-  <a href="index.html" class="hover:underline">Home</a>
-  <a href="contact.html" class="hover:underline">Contact</a>
-  <a href="about.html" class="hover:underline">About</a>
-  <a href="resume.html" class="hover:underline">Resume</a>
-  <a href="project.html" class="hover:underline">Projects</a>
-  <a href="sampleP.html" class="hover:underline">Sample Projects</a>
-</div>
-</div>
+        <!-- LEFT -->
+        <h3 class="text-xl font-semibold">
+            Certificate 4 Web Tech Portfolio
+        </h3>
 
+        <!-- NAV -->
+        <nav>
+            <div class="flex flex-wrap gap-8 text-deepMocha text-lg">
+                <a href="index.html" class="hover:underline">Home</a>
+                <a href="contact.html" class="hover:underline">Contact</a>
+                <a href="about.html" class="hover:underline">About</a>
+                <a href="resume.html" class="hover:underline">Resume</a>
+                <a href="project.html" class="hover:underline">Projects</a>
+                <a href="sampleP.html" class="hover:underline">Sample Projects</a>
+            </div>
+        </nav>
 
-<!-- EXAMPLE FROM PHASE 4 -->
-<div class="min-h-screen w-full flex justify-center items-center px-16 py-20 bg-deepMocha">
-
-  <!-- CARD WRAPPER -->
-  <div class="w-full max-w-lg bg-ivoryMist rounded-lg shadow-xl p-3 flex flex-col items-center gap-6">
-
-  <!-- TITLE -->
-  <h2 class="text-3xl font-bold text-dee mb-6">Ninja API App</h2>
-
-  <!-- BUCKET LIST/HOBBIES CHECKBOX -->
-  <div class="flex flex-col md:flex-row gap-4 items-center">
-    <label class="flex items-center gap-2 text-steelBlue">
-      <input type="checkbox" id="bucketList" class="form-checkbox h-5 w-5 text-steelBlue">
-      Bucket List
-    </label>
-
-    <label class="flex items-center gap-2 text-steelBlue">
-      <input type="checkbox" id="hobbies" class="form-checkbox h-5 w-5 text-steelBlue">
-      Hobbies
-    </label>
-  </div>
-
-  <!-- DROPDWON CATEGORIES -->
-  <div id="hobbySection" class="flex flex-col items-center gap-2">
-    <label for="category" class="text-ivoryMist font-medium">Choose category:</label>
-    <select id="category" class="px-3 py-2 rounded-lg border border-steelBlue focus:outline-none focus:ring-2 focus:ring-steelBlue">
-      <option value="general">General</option>
-      <option value="education">Education</option>
-      <option value="sports_and_outdoors">Sports and Outdoors</option>
-      <option value="collection">Collection</option>
-      <option value="competition">Competition</option>
-      <option value="observation">Observation</option>
-    </select>
-  </div>
-
-<!-- OUTPUT -->
-<div id="output" 
-     class="w-auto max-w-lg h-30 bg-ivoryMist text-deepMocha 
-            rounded-lg p-6 shadow-inner flex items-center justify-center text-center
-            border border-deepMocha">
-  Click the button to get a result!
-</div>
+    </div>
+</header>
 
 
+<!-- MAIN-->
+<main class="min-h-screen w-full flex justify-center items-center px-16 py-20">
 
+    <!-- CARD WRAPPER -->
+    <section class="w-full max-w-lg bg-ivoryMist rounded-lg shadow-xl p-6 flex flex-col items-center gap-6">
 
-  <!-- BUTTON -->
-<button id="getResponseButton"
-        class="bg-steelBlue text-ivoryMist py-8 p-6 rounded-lg shadow-md"">
-  Get Response
-</button>
+        <!-- TITLE -->
+        <h2 class="text-3xl font-bold text-deepMocha mb-2">Ninja API App</h2>
 
-</div>
-</div>
+            <!-- BUCKET LIST/HOBBIES CHECKBOX -->
+           <section class="flex flex-col md:flex-row gap-4 items-center">
+            <label class="flex items-center gap-2 text-steelBlue">
+                <input type="checkbox" id="bucketList" class="h-5 w-5 text-steelBlue" />
+                Bucket List
+            </label>
+
+            <label class="flex items-center gap-2 text-steelBlue">
+                <input type="checkbox" id="hobbies" class="h-5 w-5 text-steelBlue" />
+                Hobbies
+            </label>
+        </section>
+
+        <!-- DROPDOWN CATEGORIES -->
+        <section id="hobbySection" class="flex flex-col items-center gap-2">
+            <label for="category" class="text-deepMocha font-medium">Choose category:</label>
+            <select id="category"
+                class="px-3 py-2 rounded-lg border border-steelBlue focus:outline-none focus:ring-2 focus:ring-steelBlue">
+                <option value="general">General</option>
+                <option value="education">Education</option>
+                <option value="sports_and_outdoors">Sports and Outdoors</option>
+                <option value="collection">Collection</option>
+                <option value="competition">Competition</option>
+                <option value="observation">Observation</option>
+            </select>
+        </section>
+
+        <!-- OUTPUT -->
+        <section id="output"
+            class="w-full bg-ivoryMist text-deepMocha rounded-lg p-6 shadow-inner text-center border border-deepMocha">
+            Click the button to get a result!
+        </section>
+
+        <!-- BUTTON -->
+        <button id="getResponseButton"
+            class="bg-steelBlue text-ivoryMist py-4 px-6 rounded-lg shadow-md hover:opacity-90 transition">
+            Get Response
+        </button>
+
+    </section>
+
+</main>
 
 
   <!--FOOTER-->
@@ -93,7 +95,7 @@
       </div>
     </div>
   </footer>
-      <script src="js/sampleP.js"></script>
+<script src="js/sampleP.js"></script>
 
 </body>
 </html>
